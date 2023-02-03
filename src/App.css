@@ -1,0 +1,175 @@
+/* --------- This is CSS Reset Code --------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* --------- Begin your CSS Below here --------- */
+
+.App {
+	
+}
+
+.headerName{
+	font-size: 18px;
+	color: white;
+	width: 50vw;
+	position: fixed;
+	display: flexbox;
+	top: 20px;
+	left: 100px;
+	font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.header {
+	background-color: rgb(226, 117, 35);
+	width: 100vw;
+	height: 60px;
+}
+
+.footer {
+	background-color: gray;
+	width: 100vw;
+	height: 150px;
+	position: absolute;
+	display: flex;
+	bottom: 0%;
+}
+
+.nav-button {
+	background-color: rgb(226, 117, 35);
+	border: none;
+	color: white;
+	font-size: 18px;
+	margin: 0%;
+	padding: 0%;
+	top: 20px;
+	font-family:Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+#homeBtn {
+	display: flex;
+	position: fixed;
+	right: 140px;
+}
+
+#recipeBtn {
+	display: flex;
+	position: fixed;
+	right: 20px;
+}
+
+.social {
+	display: flex;
+	position: absolute;
+	top: 40px;
+	left: 70px;
+	color: white;
+	font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.Logo {
+	display: flex;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+
+.logoBackground{
+	display: flex;
+	position: absolute;
+	bottom: 40px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: rgb(121, 174, 177);
+}
+
+#facebook {
+	left: 50px;
+}
+
+#insta {
+	left: 110px;
+}
+
+#twitter {
+	left: 170px;
+}
+
+#cat {
+	left: 230px;
+}
+
+.devLogo {
+	display: flex;
+	position: absolute;
+	right: 30px;
+	top: 25px;
+}
+
+.recipePic {
+	display: flex;
+	position: absolute;
+	height: 350px;
+	width: 100vw;
+}
+
+.newRecipeHeader {
+	font-size: 18px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.pineapple {
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:  rgb(226, 117, 35);
+	font-weight:bold;
+	padding-bottom: 20px;
+}
+
+.pineappleRecipe {
+	color: white;
+	padding-bottom: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+.newRecipe {
+	text-align: center;
+	position: relative;
+    left: 20%;
+    width: 60%;
+}
+
+.blue-btn {
+	background-color: rgb(121, 174, 177);
+	height: 30px;
+	width: 100px;
+	color: white;
+	border: none;
+	border-radius:2%;
+	cursor: pointer;
+}
