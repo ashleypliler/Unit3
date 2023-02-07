@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomeScreen from "./components/homeComponents/HomeScreen";
 import DetailScreen from "./components/detailComponents/DetailScreen"
-import NewRecipeScreen from "./components/newRecipeComponents/NewRecipeScreen"
+import NewRecipeScreen from "./components/newRecipeComponents/NewRecipeScreen";
 
 function App() {
   return (
