@@ -13,20 +13,14 @@ const RecipeCard = ({recipe}) => {
   return (
     <section>
       <div className="recipeCard">
-        <img className="cakePic" src={cake}></img>
-        <h1 className="recipeCake">German Chocolate Cake</h1>
-        <button className="cakeBtn">See Recipe</button>
+      <div>
+        <div className="imgContainer">
+          <img className="recipeImg" src={recipe.image_url} />
+        </div>
+        <h3>{recipe.recipe_name}</h3>
       </div>
-      <div className="recipeCard2">
-        <img className="steakPic" src={steak}></img>
-        <h1 className="recipeSteak">Rosemary Garlic Steak</h1>
-        <button className="steakBtn">See Recipe</button>
-      </div>
-      <div className="recipeCard3">
-        <img className="smoothiePic" src={smoothie}></img>
-        <h1 className="recipeSmoothie">Rasspberry smoothie</h1>
-        <button className="smoothieBtn">See Recipe</button>
-      </div>
+      <button className="blue-btn" onClick={ButtonClicked}>See Recipe!</button>
+    </div>
     </section>
   );
 };
