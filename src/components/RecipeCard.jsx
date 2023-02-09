@@ -1,8 +1,6 @@
 import React from "react";
 import { Navigate, useNavigate } from "react-router-dom";
-import cake from "../assets/cake.jpg"
-import steak from "../assets/steak.jpg"
-import smoothie from "../assets/smoothie.jpg"
+
 
 const RecipeCard = ({recipe}) => {
 
@@ -15,9 +13,9 @@ const RecipeCard = ({recipe}) => {
       <div className="recipeCard">
       <div>
         <div className="imgContainer">
-          <img className="recipeImg" src={recipe.image_url} />
+          <img className="recipeImg"  />
         </div>
-        <h3>{recipe.recipe_name}</h3>
+        <h3></h3>
       </div>
       <button className="blue-btn" onClick={ButtonClicked}>See Recipe!</button>
     </div>
