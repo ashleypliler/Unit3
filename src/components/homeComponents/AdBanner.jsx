@@ -14,10 +14,10 @@ const AdBanner = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="newRecipe">
-        <h3 className="newRecipeHeader">New Recipe</h3>
-        <h1 className="pineapple">Pineapple Salmon</h1>
-        <h2 className="pineappleRecipe">
+      <div className="adHeader">
+        <h3 className="adHeader1">New Recipe</h3>
+        <h1 className="adHeader2">Pineapple Salmon</h1>
+        <h2 className="adRecipe">
           This recipe consists of fresh wild Alaskan salmon, rubbed in a bbq
           brown sugar rub, baked for 25 minutes on a bed of pineapple, and garnished in butter, garlic, and chives. You won’t want to miss it!
         </h2>

@@ -138,15 +138,15 @@ time, mark, audio, video {
 	top: 60px;
 }
 
-.newRecipeHeader {
-	font-size: 18px;
+.adHeader1 {
+	font-size: 20px;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
 
-.pineapple {
+.adHeader2 {
 	font-size: 50px;
 	font-family: Arial, Helvetica, sans-serif;
 	color:  rgb(226, 117, 35);
@@ -154,14 +154,14 @@ time, mark, audio, video {
 	padding-bottom: 20px;
 }
 
-.pineappleRecipe {
+.adRecipe {
 	color: white;
 	padding-bottom: 30px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 17px;
 }
 
-.newRecipe {
+.adHeader {
 	text-align: center;
 	position: relative;
     left: 20%;
@@ -180,7 +180,11 @@ time, mark, audio, video {
 	cursor: pointer;
 }
 
-.recipeCard {
+.blue-btn:hover {
+	opacity: .5;
+}
+
+.recipe_card {
 	width: 300px;
 	height: 450px;
 	align-items: center;
@@ -192,184 +196,139 @@ time, mark, audio, video {
 	padding-bottom: 10px;
 	box-sizing: border-box;
 	border-radius: 3px;
-}
-
-.imgContainer {
+  }
+  
+  .recipe_card:hover {
+	opacity: .5;
+  }
+  
+  .recipe_img_container {
 	width: 300px;
 	height: 300px;
 	margin-bottom: 10px;
   }
   
-  .recipeImg {
+  img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 	border-radius: 3px 3px 0px 0px;
   }
+  
 
 
 /* Recipe Input Page */
 
-.searchRecipe {
-	border-radius: 230px;
-	height: 35px;
-	width: 300px;
-	border: none;
-	background-color:rgb(245, 222, 205); 
-	font-size: 20px;
-	color: black;
+
+.recipe_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
-.searchRecipe:focus {
-	outline-width: 0;
-	
+.recipe_container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
-.searchInput {
-	display: flex;
-	position:absolute;
-	top: 435px;
-	left: 350px;
-	border-radius:30px;
-	border: none;
-	background-color:rgb(245, 222, 205); 
+input:focus {
+  outline: none;
 }
 
-.searchIcon {
-	padding-top: 5px;
-	padding-left: 10px;
+.search_bar svg {
+  height: 80%;
+}
+
+.search_bar input {
+  width: 100%;
+  border-radius: 0 30px 30px 0;
+  font-size: 20px;
+}
+
+input {
+  height: 45px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent
+}
+
+.search_bar {
+  display: flex;
+  position: relative;
+  top: 380px;
+  min-width: 250px;
+  width: 30vw;
+  border-radius: 50px;
+  border: none;
+  background-color: #da773551;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 5px;
+  box-sizing: border-box;
 }
 
 /* details page */
 
-.leftDiv{
-	display: flex;
-	position: absolute;
-	top: 400px;
-	left: 150px;
+.banner {
+	width: 100%;
 	height: 350px;
-	width: 250px;
-	background-color: white;
-	box-shadow: 2px 2px 2px 2px lightgray;
-}
-
-.rightDiv{
 	display: flex;
-	position: absolute;
-	top: 400px;
-	right: 150px;
-	height: 450px;
-	width: 375px;
-	background-color: white;
-	box-shadow: 2px 2px 2px 2px lightgray;
-}
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	color: white;
+	background-size: cover;
+	margin-bottom: 30px;
+	
+  }
 
-.headers {
+.details_container {
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 15px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 25px;
-}
+  }
 
-#recipeHeader {
-	display: flex;
-	position: absolute;
-	top: 20px;
-	left: 85px;
-}
+  .details_container h2 {
+	color: black;
+	text-align: center;
+  }
 
-#ingredientsHeader {
-	display: flex;
-	position: absolute;
-	top: 150px;
-	left: 65px;
-}
+.instruction_container {
+	width: 370px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+	box-sizing: border-box;
+	padding: 12px;
+	border-radius: 3px;
+  }
 
-#instructHeader {
-	display: flex;
-	position: absolute;
-	top: 20px;
-	left: 120px;
-}
+  .instruction_container h2{
+	font-size: 20px;
+	padding-bottom: 20px;
+  }
+  
+  .ingredients_container {
+	width: 220px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.6);
+	box-sizing: border-box;
+	padding: 12px;
+	border-radius: 3px;
+  }
 
-.recipeTime {
-	list-style: none;
-	font-size: 15px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-#prep {
-	display: flex;
-	position: absolute;
-	top: 70px;
-	left: 10px;
-}
-
-#cook {
-	display: flex;
-	position: absolute;
-	top: 90px;
-	left: 10px;
-}
-
-#serve {
-	display: flex;
-	position: absolute;
-	top: 110px;
-	left: 10px;
-}
-
-.ingredients {
-	list-style: none;
-	font-size: 15px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-#steak {
-	display: flex;
-	position: absolute;
-	top: 210px;
-	left: 10px;
-}
-#salt {
-	display: flex;
-	position: absolute;
-	top: 230px;
-	left: 10px;
-}
-#pepper {
-	display: flex;
-	position: absolute;
-	top: 250px;
-	left: 10px;
-}
-#lemon {
-	display: flex;
-	position: absolute;
-	top: 270px;
-	left: 10px;
-}
-#rosemary {
-	display: flex;
-	position: absolute;
-	top: 290px;
-	left: 10px;
-}
-
-
-.instructions {
-	display: flex;
-	position: absolute;
-	text-align: left;
-	top: 50px;
-	margin: 20px;
-}
-
-.detailsPic {
-	display: flex;
-	position: absolute;
-	height: 300px;
-	width: 100vw;
-	top: 60px;
-}
+  .ingredients_container h2 {
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+  }
 
 .deatilsHeader {
 	text-align: center;
@@ -384,29 +343,119 @@ time, mark, audio, video {
 	padding-bottom: 20px;
 }
 
+
 /* New Recipe Page */
 
-.formContainer {
-    position: relative;
-    left: 20%;
-    width: 60%;
-    height: 100vh;
-    background-color:white;
-  }
 
-  .formHeader {
+form {
 	display: flex;
-	position: absolute;
-	top: 90px;
-	left: 200px;
-	font-family: Restora;
-	font-size: 25px;
+	flex-direction: column;
+	align-items: center;
+	width: 40vw;
+	height: fit-content;
+	gap: 15px;
+	margin-top: 30px;
+	
+  }
+  
+  section {
+	display: flex;
+	position: relative;
+	top: 50px;
+	flex-direction: column;
+	align-items: center;
   }
 
-  .newRecipeForm {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 80%;
-    height: 600px;
+  .newRecipeHeader{
+	display: flex;
+	position: relative;
+	top: 20px;
+	font-size: 25px;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 10px;
+	padding-top: 10px;
   }
+  
+   form input, form textarea {
+	border: 1px solid #989898;
+	border-radius: 3px;
+	font-size: 17px;
+  }
+
+  form input[type=radio] {
+	height: 35px;
+	width: 35px;
+	border: 3px;
+  }
+  
+  form label {
+	font-size: 20px;
+  }
+  
+  form input:focus {
+	--color: hsl(var(--primary-color), var(--l));
+	border: 1px solid var(--color)
+  }
+  
+  form h5 {
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  textarea {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .radioBtns {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 25px;
+  }
+  
+  .radioBtns span {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+  }
+  
+  .inputContainer {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	gap: 30px;
+	width: 100%;
+  }
+  
+  .inputContainer input {
+	width: 100%;
+  }
+  .inputContainer div {
+	width: 100%;
+  }
+  
+  .ingredient_inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 50%;
+  }
+  
+  ul {
+	width: 50%;
+  }
+
+  .orange-btn {
+	background-color:rgb(226, 117, 35); 
+	height: 30px;
+	width: 100px;
+	color: white;
+	border: none;
+	border-radius:2%;
+	cursor: pointer;
+  }
+
+
+

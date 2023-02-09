@@ -1,25 +1,21 @@
 import React from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-
-const RecipeCard = ({recipe}) => {
-
-    const ButtonClicked = () => {
-        useNavigate(`/recipe/${recipe.recipe_id}`);
-    };
+const RecipeCard = ({ recipe }) => {
+  const ButtonClicked = () => {
+    useNavigate(`/recipe/${recipe.recipe_id}`);
+  };
 
   return (
-    <section>
-      <div className="recipeCard">
-      <div>
-        <div className="imgContainer">
-          <img className="recipeImg"  />
-        </div>
-        <h3></h3>
+    <div className="recipe_card">
+    <div>
+      <div className="recipe_img_container">
+        <img src={recipe.image_url} />
       </div>
-      <button className="blue-btn" onClick={ButtonClicked}>See Recipe!</button>
+      <h3>{recipe.recipe_name}</h3>
     </div>
-    </section>
+    <button className="blue-btn" onClick={ButtonClicked}>See Recipe!</button>
+  </div>
   );
 };
 
